@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="54a58bee-c255-45b4-ae34-5861c1154f17">
+	<Properties>
+		<Name>Cheaper Unit Upgrade</Name>
+		<Stability>Beta</Stability>
+		<Teaser>Cheaper Unit Upgrade</Teaser>
+		<Description>Upgrading units is 40% cheaper. Minimum cost from 30->20.</Description>
+		<Authors>Cameron Probert</Authors>
+		<SpecialThanks></SpecialThanks>
+	</Properties>
+	<Files>
+		<File>Rules.sql</File>
+	</Files>  
+	<Settings>
+		<Custom id="CheaperUnitUpgrade">
+			<Items>
+				<Component>CheaperUnitUpgradeComponent</Component>
+			</Items>
+		</Custom>
+	</Settings>	
+	<Components>
+		<UpdateDatabase id="CheaperUnitUpgrade">
+			<Properties>
+				<Name>Cheaper Unit Upgrade</Name>
+			</Properties>
+			<Items>
+				<File>Rules.sql</File>
+			</Items>
+		</UpdateDatabase>
+	</Components>
+</Mod>
